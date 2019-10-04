@@ -3,8 +3,8 @@ import csv
 
 # csvpath = '/Users/danvaldes/Desktop/bootcamp/repo/03-Python/Homework/Instructions/PyBank/Resources/budget_data.csv'
 
-path = '/Users/danvaldes/desktop/bootcamp/python-challenge'
-csvpath = os.path.join(path, 'pybank', 'budget_data.csv')
+path = '/Users/danvaldes/Desktop/bootcamp/repo/03-Python/Homework/Instructions/PyBank'
+csvpath = os.path.join(path, 'Resources', 'budget_data.csv')
 
 
 months = []
@@ -33,7 +33,7 @@ minindex = profloss.index(min(profloss))
 
 print(f'Financial Analysis\n ------------------ \n Total Months: {monthtot}\n Total: ${totprof}\n Average Change: ${avgprof}\n Greatest Increase in Profits: {months[maxindex]} ${max(profloss)}\n Greatest Decrease in Profits: {months[minindex]} ${min(profloss)}')
 
-outputpath = os.path.join(path, 'pybank', 'output.txt')
+outputpath = '/Users/danvaldes/Desktop/bootcamp/python-challenge/pybank/output.txt'
 
 with open (outputpath, 'w') as datafile:
     datafile.write(f'Financial Analysis\n ------------------ \n Total Months: {monthtot}\n Total: ${totprof}\n Average Change: ${avgprof}\n Greatest Increase in Profits: {months[maxindex]} ${max(profloss)}\n Greatest Decrease in Profits: {months[minindex]} ${min(profloss)}')

@@ -3,8 +3,8 @@ import os
 
 # csvpath = '/Users/danvaldes/Desktop/bootcamp/python-challenge/pypoll/election_data.csv'
 
-path = '/Users/danvaldes/desktop/bootcamp/python-challenge'
-csvpath = os.path.join(path, 'pypoll', 'election_data.csv')
+path = 'Users/danvaldes/Desktop/bootcamp/repo/03-Python/Homework/Instructions/PyPoll'
+csvpath = os.path.join(path, 'Resources', 'election_data.csv')
 
 # create lists
 voterid = []
@@ -56,7 +56,7 @@ winner = candidate2[maxindex]
 # print output
 print(f"Election Results\n-------------------------\nTotal Votes: {totalvote}\n-------------------------\nKhan: {kper}% {ktot}\nCorrey: {cper}% {ctot}\nLi: {lper}% {ltot}\nO'Tooley: {oper}% {otot}\n-------------------------\nWinner: {winner}\n-------------------------\n")
 
-outputpath = os.path.join(path, 'pypoll', 'electionoutput.txt')
+outputpath = '/Users/danvaldes/Desktop/bootcamp/python-challenge/pypoll/electionoutput.txt'
 
 with open (outputpath, 'w') as datafile:
     datafile.write(f"Election Results\n-------------------------\nTotal Votes: {totalvote}\n-------------------------\nKhan: {kper}% {ktot}\nCorrey: {cper}% {ctot}\nLi: {lper}% {ltot}\nO'Tooley: {oper}% {otot}\n-------------------------\nWinner: {winner}\n-------------------------\n")
